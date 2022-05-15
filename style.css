@@ -112,3 +112,17 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+/*-----------Cookie Policy----------*/
+.cookie-policy
+{
+    color:black;
+}
+
+.cookie-consent {
+    position: fixed;
+    bottom: 8px;
+    left: 20px;
+    padding-top: 7px;
+    width: 600px;
+}
