@@ -47,7 +47,7 @@
             <p></p>
             <h1><b>Modder Fodder (Clown Clear)</b></h1>
             
-            <h5><b>12/17/22 8:05 PM EST</b></h5>
+            <h5><b>12/17/22 | 8:05 PM EST</b></h5>
     <hr>
             <p>Hola, payaso enthuasticos. Today’s blog is all about mod support and how I plan (or hope) to incorporate it in Clown Clear. It should be said that these are currently just ideas and are subject to change before release, so please keep that in mind.
 <br><br>
@@ -58,15 +58,15 @@ I would also like to mention that some of this may seem ramble-y, but the point 
     <p>To start off, there are three main components, or goals, that I’m keeping in mind while conceptualizing these systems, those being freedom, ease of use, and consistency. I explain these further in the following “sub-paragraphs”, but if you want to skip to the custom modifier &amp; level editor information, just scroll down until you see the “Modifier Editor” heading.
     <br></p>
 
-    <h3>Freedom</h3>
+    <h4>Freedom</h4>
     <p>Freedom is arguably the most important because it dictates how much the player is allowed to change. Some games feature simple mod support, allowing you to create alternate skins for the character, or create levels with a primitive editor. While this may be preferable for simpler games, more complex projects might want a more complex solution, which can include things like the ability to swap out any model, texture, etc.<br><br>Currently I’m looking into a mix between the two, as while I’d love to give the player ultimate freedom, implementing a system both capable of importing and replacing assets in-game requires a significant amount of work. As of now I’m mostly focusing on built-in modifier &amp; level editors, but to reiterate, all of this is subject to change.</p>
     
-    <h3>Ease of Use</h3>
+    <h4>Ease of Use</h4>
     <p>Ease of use is another very important component since it opens modding to a lot more people. Unfortunately, more freedom usually equates to less ease of use, but it’s still possible to organize everything in a way that balances it out.
 <br><br>
 As such, I’ve been working on some very early concepts for the modifier &amp; level editors, which I think strike a good balance, but it’s still a heavy work in progress.</p>
     
-    <h3>Consistency</h3>
+    <h4>Consistency</h4>
     <p>Consistency (and organization in general, I guess) is the final component I’m going to mention, it might not be as obvious as the others, but it’s still something to consider. 
 <br><br>
 My current plan is to have an overarching “Mods” menu, which contains every type of mod, a enable/disable button, mod info, etc., and a conflicting mods system, but there might also be some sort of required mods system in-place for mod makers to assign maps to modifiers. Every variant of mod will be packaged and assigned to the main “Mods” menu, but enabled mods will be shown in their respective categories as well.</p>
