@@ -1,28 +1,3 @@
-/* Show cookie popup. */
-function showCookiePopup() {
-    let cookiePopup = document.getElementById("cookie-popup");
-    cookiePopup.style.display = "block";
-}
-
-/* Hides cookie popup and saves the value to localstorage. */
-function hideCookiePopup() {
-    localStorage.setItem("isCookieAccepted", "yes");
-    let cookiePopup = document.getElementById("cookie-popup");
-    cookiePopup.style.display = "none";
-}
-
-/* Checks localstorage and determines whether or not to show cookie popup. */
-function initializeCookiePopup() {
-    let isCookieAccepted = localStorage.getItem("isCookieAccepted");
-    if (isCookieAccepted === null) {
-        localStorage.setItem("isCookieAccepted", "no");
-        showCookiePopup();
-    }
-    if (isCookieAccepted === "no") {
-        showCookiePopup();
-    }
-}
-
 // Create cookie
 function setCookie(cname, cvalue, exdays) {
     const d = new Date();
@@ -57,7 +32,7 @@ function getCookie(cname) {
 }
 
 // Set cookie consent
-function acceptCookieConsent() {
+function hideCookiePopup() {
     deleteCookie('user_cookie_consent');
     setCookie('user_cookie_consent', 1, 30);
     document.getElementById("cookieNotice").style.display = "none";
