@@ -1,0 +1,143 @@
+*
+{
+    margin: 0
+    padding: 0
+}
+
+#nav-bar
+{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar {
+    background-image: linear-gradient(to right, #000000, #2B2828);
+    padding: 0 !important;
+}
+.navbar-brand img
+{
+    height: 40px;
+    padding-left: 20px;
+}
+.navbar-nav li
+{
+    padding: 0 10px;
+}
+.navbar-nav li a
+{
+    color: #fff !important;
+    font-weight: 600;
+    float: right;
+    text-align: left;
+}
+.navbar-toggler
+{
+    outline: none;
+    box-shadow: none;
+}
+.dropdown-menu > li > a:hover {
+    background-image: none;
+    background-color: #444040;
+}
+
+.grid {
+    display: grid;
+    place-items: center;
+}
+
+/*-----------Home----------*/
+.body-home 
+{
+    font-family: sans-serif;
+    background-image: url("images/Banners/Home.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.introduction {
+    
+    color: lightgray;
+    text-align: center;
+    text-shadow: #000000 1px 0 10px;
+}
+
+/*-----------About----------*/
+.body-about 
+{
+    font-family: sans-serif;
+    background-image: url("images/Banners/About.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.aboutme-text {
+    max-width: 760px;
+    color: lightgray;
+    text-align: center;
+    text-shadow: #000000 1px 0 10px;
+}
+
+/*-----------Games----------*/
+.body-games 
+{
+    font-family: sans-serif;
+    background-image: url("images/Banners/Games.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#games-list
+{
+    padding: 0px 0;
+}
+.game-img
+{
+    width: 100%;
+    margin-top: 20px;
+}
+.game-txt {
+    color: white;
+    text-shadow: #000000 1px 0 10px;
+}
+
+/* These are used for "Games" filtering */
+.filterDiv
+{
+    display: none; /* Hidden by default */
+}
+
+.show /* The "show" class is added to the filtered elements */ 
+{
+    display: block;
+}
+
+/*-----------Contact----------*/
+.body-contact {
+    font-family: sans-serif;
+    background-image: url("images/Banners/Games.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*-----------Cookie Policy----------*/
+#cookie-popup {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.body-missing {
+    font-family: sans-serif;
+    background-image: url("images/Banners/Missing.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

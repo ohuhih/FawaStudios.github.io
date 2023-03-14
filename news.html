@@ -1,0 +1,130 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News - FawaStudios</title>
+    <link rel="shortcut icon" type="image/png" href="images/General/FawaStudios_Icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+</head>
+<body class="body-about" style="background-color: black">
+    <!------nav bar-------->
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="images/General/FawaStudios_Logo.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item"> <a class="nav-link" href="https://www.fawastudios.com/">HOME</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="about">ABOUT</a> </li>
+                        <li class="nav-item"> <a class="nav-link active" aria-current="page" href="">NEWS</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="games">GAMES</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="contact">CONTACT</a> </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                SOCIALS
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown" style="position: absolute; background-color: #2A2727;">
+                                <li><a class="dropdown-item" href="https://twitter.com/FawaStudios">Twitter</a></li>
+                                <li><a class="dropdown-item" href="https://www.youtube.com/channel/UCGdYveTA3CWhVC4xYAPHcRw">YouTube</a></li>
+                                <li><a class="dropdown-item" href="https://discord.com/invite/BGg7pRxaUe ">Discord</a></li>
+                                <li><a class="dropdown-item" href="https://www.reddit.com/r/FawaStudios/">Reddit</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!--------main section---------->
+    <article class="grid">
+        <div class="aboutme-text">
+            <p></p>
+            <h1>LATEST NEWS</h1>
+
+            <div class="btn-toolbar" role="toolbar">
+                <div class="btn-group mr-2" style="margin: auto" role="group">
+                    <button class="btn btn-dark" onclick="filterSelection('all')">Show All</button>
+                    <button class="btn btn-dark" onclick="filterSelection('clownclear')">Clown Clear</button>
+                    <button class="btn btn-dark" onclick="filterSelection('fawastudios')">FawaStudios</button>
+                </div>
+            </div>
+
+            <p></p>
+            <h5 class="filterDiv fawastudios"><b>"<a href="news/2023/01/new-websites-and-cool-stuff.html">New Websites & Cool Stuff</a>"</b> | January 9, 2023</h5>
+            <h5 class="filterDiv clownclear"><b>"<a href="news/2022/12/modder-fodder-clown-clear.html">Modder Fodder (Clown Clear)</a>"</b> | December 17, 2022</h5>
+            <h5 class="filterDiv fawastudios clownclear"><b>"<a href="news/2022/12/fawas-and-the-near-future.html">Fawas And The Near Future</a>"</b> | December 10, 2022</h5>
+            <h5 class="filterDiv fawastudios clownclear"><b>"<a href="news/2022/12/sprucing-things-up.html">Sprucing Things Up</a>"</b> | December 3, 2022</h5>
+            <h5 class="filterDiv clownclear"><b>"<a href="news/2022/11/more-clowns-less-frowns.html">More Clowns, Less Frowns</a>"</b> | November 25, 2022</h5>
+        </div>
+        
+    </article>
+
+    <!-- cookie popup -->
+    <script async src="js/fawastudios_cookie.js"></script>
+
+    <div id="cookie-popup" class="alert alert-dark text-center mb-0" role="alert">
+        🍪🐑 This website uses cookies to improve your experience.
+        <a href="cookiepolicy.html">Learn more</a>
+        <button type="button" class="btn btn-primary btn-sm ms-3" onclick="hideCookiePopup()">
+            I Got It
+        </button>
+    </div>
+    <!-- cookie popup end -->
+</body></html>
+
+<script>
+    filterSelection("all")
+    function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("filterDiv");
+        if (c == "all") c = "";
+        // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+        for (i = 0; i < x.length; i++) {
+            w3RemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        }
+    }
+
+    // Show filtered elements
+    function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+            if (arr1.indexOf(arr2[i]) == -1) {
+                element.className += " " + arr2[i];
+            }
+        }
+    }
+
+    // Hide elements that are not selected
+    function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+            while (arr1.indexOf(arr2[i]) > -1) {
+                arr1.splice(arr1.indexOf(arr2[i]), 1);
+            }
+        }
+        element.className = arr1.join(" ");
+    }
+
+    // Add active class to the current control button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+        });
+    }
+</script>
