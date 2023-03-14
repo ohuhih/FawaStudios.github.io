@@ -35,13 +35,13 @@ function getCookie(cname) {
 function hideCookiePopup() {
     deleteCookie('user_cookie_consent');
     setCookie('user_cookie_consent', 1, 30);
-    document.getElementById("cookieNotice").style.display = "none";
+    document.getElementById("cookie-popup").style.display = "none";
 }
 
 
 let cookie_consent = getCookie("user_cookie_consent");
 if (cookie_consent != "") {
-    document.getElementById("cookieNotice").style.display = "none";
+    document.getElementById("cookie-popup").style.display = "none";
 } else {
-    document.getElementById("cookieNotice").style.display = "block";
+    document.getElementById("cookie-popup").style.display = "block";
 }
