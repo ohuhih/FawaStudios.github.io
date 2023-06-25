@@ -4,6 +4,28 @@
     padding: 0
 }
 
+   /* Custom scrollbar design */
+    body::-webkit-scrollbar {
+      width: 10px;
+      background-color: rgba(114, 137, 218, 0.1); /* Blurple color */
+      border-radius: 8px; /* Rounded edges */
+    }
+
+    body::-webkit-scrollbar-thumb { /* this the thingy that moves lol */
+      background: linear-gradient(180deg, rgba(114, 137, 218, 0.5), rgba(155, 89, 182, 0.5)); /* Gradient from blurple to purple with 50% transparency */
+      border-radius: 8px; /* Rounded edges */
+    }
+
+    body::-webkit-scrollbar-thumb:hover {
+      background: linear-gradient(180deg, rgba(84, 105, 212, 0.5), rgba(142, 68, 173, 0.5)); /* more gradient */
+    }
+
+    body::-webkit-scrollbar-track {
+      background-color: rgba(114, 137, 218, 0.1); /* Blurple color with 10% transparency */
+      border-radius: 8px; /* Rounded edges */
+    }
+
+
 #nav-bar
 {
     position: sticky;
